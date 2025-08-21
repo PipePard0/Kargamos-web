@@ -97,6 +97,7 @@ function mostrarReservasCarga() {
 //Mostrar las reservas pasajeros
 function mostrarReservas() {
     const lista = document.getElementById("listaReservas");
+    if (!lista) return;
     lista.innerHTML = "";
     lista.style.color = "white";
 
