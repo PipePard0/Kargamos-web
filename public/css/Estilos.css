@@ -1,0 +1,259 @@
+Css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3  {
+    color: rgb(255, 0, 0);
+}
+
+html {
+    background-color: #111822f7;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+h2 {
+    color: #7b1fa2;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(52, 0, 241)
+    color #ff0000
+    line-height 1.6;
+}
+
+header {
+    background-image: url("/imagenes/banner_468x60.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 0px;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, .363);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative; /* Agregado para referencia absoluta */
+    padding-bottom: 28px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    position: absolute; /* Agregado */
+    bottom: 0px;        /* Espacio desde abajo */
+    left: 50%;           /* Centrado horizontal */
+    transform: translateX(-50%); /* Centrado horizontal */
+    width: auto;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 126, 126);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+}
+
+main { 
+    background-color: #111822;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+form {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #111822;
+    padding: 20px;
+    padding-right: 20px;
+ 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px7 rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, .363);
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form input, form select, form textarea {
+    box-sizing: border-box; /* Limita el crecimiento al ancho del contenedor */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fffb00;
+    border-radius: 6px;
+}
+
+form button {
+    background: #fc0;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: rgb(190, 152, 0);
+}
+
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+p {
+    color: #fff;
+}
+
+nav ul li a, nav ul a {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: 2px solid #fc0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin: 0 5px;
+    text-shadow: 1px 1px 2px #000;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    header {
+        min-height: 220px; /* Ajusta la altura para móviles */
+        justify-content: flex-end;
+        padding-bottom: 12px;
+        border-radius: 20px;
+    }
+    nav ul {
+        position: static !important; /* Elimina la posición absoluta para móviles */
+        display: flex !important; /* Asegura que el menú se muestre en línea */
+        flex-direction: column; /* Cambia a columna para móviles */
+        gap: 10px; /* Espacio entre los botones */
+        margin-top: 10px; /* Espacio arriba del menu */
+        align-items: center; /* centra los botones verticalmente */
+        width: 100vw; /* Ancho completo para móviles */
+        justify-content: center; /* Centra los botones horizontalmente */
+        left: 0;
+        transform: none;
+        padding: 0;
+    }
+    nav ul li {
+        width: 100%; /* Los li ocupan todo el ancho */
+        display: flex;
+        justify-content: center; /* Centra el botón dentro del li */
+    }
+    nav ul li a {
+        width: auto;
+        margin: 0 auto;
+    }
+    form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    label, input, button {
+        font-size: 16px; /* Ajusta el tamaño de fuente para móviles */
+    }
+}
+
+.servicios {
+    max-width: 960px;
+    margin: 24px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 16px;
+}
+
+.card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 18px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px;
+    border: 4px solid rgba(252,192,0,0.95);
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.card .btn {
+    display: inline-block;
+    background: #fc0;
+    color: #111;
+    padding: 8px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .card {
+        width: 86%;
+        max-width: 420px;
+    }
+}

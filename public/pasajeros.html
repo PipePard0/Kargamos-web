@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte Guaduas Bogota</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <!-- Seccion de pasajeros -->
+         <section id="pasajeros">
+            <h2>Reserva de cupos</h2>
+
+            <form id="formPasajeros">
+                <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                <label for="fecha">Fecha del viaje</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                <label for="destino">Dirección del destino:</label>
+                    <input type="text" id="destino" name="destino" required>
+                <label for="numeroTelefono">Número de teléfono:</label>
+                    <input type="text" id="numeroTelefono" name="numeroTelefono" required>
+                <button type="submit">Reservar</button>
+            </form>
+
+        <div id="colorReservasPasajero"></div>    
+            <h3>Cupos reservados:</h3>
+            <ul id="listaReservas"></ul>
+
+            <div id="mensaje"></div>
+         </section>
+
+         <!-- Seccion de contacto -->
+        <section id="contacto">
+            <h2>Contacto:</h2>
+            <p>Teléfono: 3214932458</p>
+            <p>pipepardomendez2@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kargamos Soluciones S.A.S</p>
+    </footer>
+
+    <script src="/Proyecto/js/app.js"></script>
+</body>
+</html>

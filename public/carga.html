@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>      
+             <section id="carga">
+                <h2>Envio de Carga</h2>
+            <form id="formCarga">
+
+                <label for="nombreCarga">Nombre del remitente</label>
+                    <input type="text" id="nombreCarga" name="nombreCarga" required>
+                <label for="fechaCarga">Fecha de envío:</label>
+                    <input type="date" id="fechaCarga" name="fechaCarga" required>
+                <label for="horaCarga">Hora de envío</label>
+                    <input type="time" id="horaCarga" name="horaCarga" required>
+                <label for="tamaño">Tamaño/Peso de la carga:</label>
+                    <input type="text" id="tamaño" name="tamaño" placeholder="20 kg, 1m3" required>
+                <label for="direccionCarga">Dirección de entrega:</label>
+                    <input type="text" id="direccionCarga" name="direccionCarga" required>
+                <label for="numeroContacto">Número de teléfono:</label>
+                    <input type="text" id="numeroContacto" name="numeroContacto" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+
+                <div id="resultadoCarga"></div>
+                    <h3>Reservas registradas:</h3>
+                    <ul id="reservasCarga"></ul>
+                <div id="mensajeCarga"></div>            
+         </section>
+
+            <!-- Seccion de contacto -->
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Teléfono: 3214932458</p>
+                <p>pipepardomendez2@gmail.com</p>
+            </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Kargamos Soluciones S.A.S</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
